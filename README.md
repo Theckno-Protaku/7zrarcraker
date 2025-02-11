@@ -1,36 +1,40 @@
-# Descompresor de Archivos 7z y RAR
+# 7z and RAR File Extractor
 
-Este es un programa para descomprimir archivos en formato **7z** y **RAR**. **No es compatible con archivos ZIP.**
+This is a program to extract files in **7z** and **RAR** format. **It is not compatible with ZIP files.**
 
-## Dependencias
-Antes de ejecutar el programa, instala las siguientes dependencias con `pip`:
+## Dependencies
+Before running the program, install the following dependencies using `pip`:
 
 ```sh
 pip install rarfile py7zr pyzipper rarfile tqdm unrar patool chardet
 ```
 
-## Requisitos Adicionales
+## Additional Requirements
 ### Windows
-Si usas Windows, asegúrate de tener instalados:
+If you are using Windows, make sure you have installed:
 - [7-Zip](https://www.7-zip.org/download.html)
 - [UnRar](https://www.rarlab.com/rar_add.htm)
 
-Estos programas son necesarios para manejar archivos RAR y 7z correctamente.
+These programs are necessary to handle RAR and 7z files correctly.
 
-## Uso
-Ejecuta el script desde la terminal o línea de comandos para descomprimir archivos compatibles(Recomiendo usar desde VsCode. Si quieres crear un archivo .exe haz lo siguiente
-##
-instalar **pyinstaller**
+## Usage
+Run the script from the terminal or command line to extract supported files. **It is recommended to use it from VSCode.**
 
+Additionally, the program requires a **password dictionary** to attempt extraction of protected files.
+
+### Creating an Executable File
+If you want to create an `.exe` file, follow these steps:
+
+#### Install **pyinstaller**
 ```sh
 pip install pyinstaller
 ```
 
-##
-Luego ejecuta 
+#### Generate the Executable
 ```sh
 pyinstaller --onefile --noconsole descompress.py
 ```
 
-##
-**NOTA** Una vez creado el archivo .exe debes tener UnRar.exe en la misma carpeta.
+### Important Note
+Once the `.exe` file is created, you must have `UnRar.exe` in the same folder for it to work correctly.
+
