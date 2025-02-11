@@ -1,4 +1,4 @@
-# 7z and RAR File Extractor
+# 7z and RAR File Extractor with password dictionary
 
 This is a program to extract files in **7z** and **RAR** format. **It is not compatible with ZIP files.**
 
